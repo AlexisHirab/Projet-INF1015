@@ -1,14 +1,17 @@
 #include <QGridLayout>
 #include <memory>
-#include "Piece.h"
+#include "Player.h"
+//Modele
 
 class ChessBoard 
 {
-	
 public:
-	ChessBoard() = default;
+	ChessBoard();
 
-	void addPiece(std::shared_ptr<Piece> piece);
+	void placerPiece();
 
+//private:
 	std::shared_ptr<Piece> chessBoard[8][8];
+	Player* playerWhite;
+	Player* playerBlack;
 };

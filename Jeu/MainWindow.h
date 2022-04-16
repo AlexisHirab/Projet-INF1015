@@ -5,22 +5,27 @@
 #include "Board.h"
 #include <QGridLayout>
 #include <QWidget>
+#include <QLabel>
 
-
+//Vue
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget* parent = nullptr);
 
-    //void addPiece(std::shared_ptr<Piece> piece);
+    MainWindow(QWidget* parent = nullptr);
 
 private:
     QWidget* widget;
-    QGridLayout* layout; 
+    QGridLayout* layout;
+    QLabel* tile;
     ChessBoard* chessBoard;
+
+    /*ChessBoard* chessBoard;
+    Player* playerBlack;
+    Player* playerWhite;*/
     
 };
 #endif // MAINWINDOW_H

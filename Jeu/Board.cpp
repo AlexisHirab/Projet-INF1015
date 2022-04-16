@@ -2,7 +2,18 @@
 #include <QGraphicsScene>
 #include <QGridLayout>
 
-void ChessBoard::addPiece(std::shared_ptr<Piece> piece) 
+ChessBoard::ChessBoard() {
+	playerWhite = new Player(true);
+	playerBlack = new Player(false);
+}
+
+void ChessBoard::placerPiece() 
 {
-	chessBoard[piece->tilePos.posX][piece->tilePos.posY] = piece;
+	for (auto piece : playerWhite->pieces_) {
+		chessBoard[piece->getPos().posX][piece->getPos().posY] = piece;
+	}
+	for (auto piece : playerBlack->pieces_) {
+		chessBoard[piece->getPos().posX][piece->getPos().posY] = piece;
+	}
+	
 }

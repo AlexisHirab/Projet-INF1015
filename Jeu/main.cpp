@@ -6,17 +6,14 @@
 #include <QLineEdit>
 #include <QLayoutItem>
 #include <QWidgetItem>
+#include <memory>
 #include "MainWindow.h"
-//#include "Piece.h" 
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-        
-    MainWindow* w = new MainWindow();
- /*   Piece
-    w->addPiece()*/
 
+    MainWindow* w = new MainWindow();
     w->show();
     return a.exec();
 }
