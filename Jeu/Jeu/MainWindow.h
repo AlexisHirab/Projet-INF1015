@@ -20,7 +20,6 @@ namespace Vue {
         MainWindow(QWidget* parent = nullptr);
 
     signals:
-
         void buttonPressed();
 
     public slots:
@@ -32,7 +31,6 @@ namespace Vue {
         QGridLayout* layout;
         QPushButton* tile;
         Modele::ChessBoard* chessBoard;
-
     };
 }
 #endif // MAINWINDOW_H

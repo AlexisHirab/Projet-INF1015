@@ -7,6 +7,7 @@
 #include <QLayoutItem>
 #include <QWidgetItem>
 #include <memory>
+#include <iostream>
 #include "MainWindow.h"
 
 

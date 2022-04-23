@@ -1,7 +1,8 @@
 #include "King.h"
-//#include "Piece.h"
+#include <QMessageBox>
 #include <string.h>
 #include <memory>
+
 class Player {
 public:
 	Player(bool white);

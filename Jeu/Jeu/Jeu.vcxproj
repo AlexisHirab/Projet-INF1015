@@ -86,10 +86,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Controleur.cpp" />
+    <ClCompile Include="TooManyKingsException.cpp" />
     <ClInclude Include="King.h" />
     <ClCompile Include="King.cpp" />
     <ClCompile Include="Piece.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClInclude Include="TooManyKingsException.h" />
     <QtRcc Include="Jeu.qrc" />
     <QtUic Include="Jeu.ui" />
     <QtMoc Include="MainWindow.h" />

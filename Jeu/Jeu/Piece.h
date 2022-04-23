@@ -1,6 +1,6 @@
 #include "Position.h"
 #include <string>
-
+#include "TooManyKingsException.h"
 
 class Piece
 {	

@@ -12,6 +12,7 @@ using Modele::ChessBoard;
 
 MainWindow::MainWindow(QWidget* parent)
 {
+    
 
     setWindowTitle("Chess Game");
     
@@ -21,8 +22,14 @@ MainWindow::MainWindow(QWidget* parent)
     layout = new QGridLayout();
     layout->setSpacing(0);
     
-
-    chessBoard = new ChessBoard();
+    try {
+        chessBoard = new ChessBoard();
+    }
+    catch (TooManyKingsException& e) {
+        QMessageBox msgBox;
+        msgBox.setText(e.message());
+        msgBox.exec();
+    }
 
     chessBoard->placerPiece();
 
@@ -50,7 +57,6 @@ MainWindow::MainWindow(QWidget* parent)
                 QString qstr = QString::fromStdString(chessBoard->chessBoard[i][j]->getType());
                 tile->setText(qstr);
                 connect(tile, &QPushButton::clicked, this, &MainWindow::changecolor);
-
             }
         }
     }
