@@ -1,2 +1,11 @@
 ﻿  Reading Qt configuration (C:/Qt/5.15.2/msvc2019_64/bin/qmake)
-  Jeu.vcxproj -> C:\Users\alexi_a97ts3w\source\repos\Jeu\x64\Debug\Jeu.exe
+  Board.cpp
+  Controleur.cpp
+  King.cpp
+  MainWindow.cpp
+  Player.cpp
+  TooManyKingsException.cpp
+  main.cpp
+  moc_Controleur.cpp
+  moc_MainWindow.cpp
+  Jeu.vcxproj -> C:\Users\tomto\OneDrive\Bureau\Projet-1015\Projet-INF1015\Jeu\x64\Debug\Jeu.exe

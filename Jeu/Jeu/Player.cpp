@@ -5,7 +5,7 @@ Player::Player(bool white) {
 		if (white) {
 			//King* king = new King();
 			pieces_[0] = std::make_shared<King>(0, 4);
-			pieces_[1] = std::make_shared<King>(0, 5);
+			//pieces_[1] = std::make_shared<King>(0, 5);
 			/*pieces_[1] = std::make_shared<King>(0, 3, "Q");
 			pieces_[2] = std::make_shared<Piece>(0, 2, "B");
 			pieces_[3] = std::make_shared<Piece>(0, 5, "B");*/

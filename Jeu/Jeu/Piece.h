@@ -1,3 +1,4 @@
+#pragma once
 #include "Position.h"
 #include <string>
 #include "TooManyKingsException.h"
@@ -10,7 +11,7 @@ public:
 	void setPos(int x, int y) { tilePos.posX = x; tilePos.posY = y; };
 	std::string getType() const { return type_; };
 	void setType(std::string type) { type_ = type; };
-	//virtual void move();
+	virtual void move(Position position) = 0;
 
 
 private:

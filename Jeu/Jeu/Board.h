@@ -1,3 +1,4 @@
+#pragma once
 #include <QGridLayout>
 #include <memory>
 #include "Player.h"
@@ -12,7 +13,7 @@ namespace Modele {
 		void placerPiece();
 
 		//private:
-		std::shared_ptr<Piece> chessBoard[8][8];
+		static std::shared_ptr<Piece> chessBoard[8][8];
 		Player* playerWhite;
 		Player* playerBlack;
 	};

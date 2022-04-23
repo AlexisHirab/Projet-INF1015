@@ -1,3 +1,4 @@
+#pragma once
 #include "King.h"
 #include <QMessageBox>
 #include <string.h>

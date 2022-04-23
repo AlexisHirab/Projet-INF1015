@@ -3,6 +3,7 @@
 #include <QGridLayout>
 
 using Modele::ChessBoard;
+std::shared_ptr<Piece> ChessBoard::chessBoard[8][8] = { nullptr };
 
 ChessBoard::ChessBoard() {
 	
